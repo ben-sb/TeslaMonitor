@@ -19,5 +19,3 @@ if __name__ == '__main__':
     # case where we don't know the cause of the exception
     except Exception as e:
         print("Unknown error: " + str(e))
-
-

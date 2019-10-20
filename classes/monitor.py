@@ -4,6 +4,7 @@ import requests
 import random
 import time
 
+
 class Monitor:
 
     def __init__(self, model, condition, delay_in_seconds):
@@ -91,4 +92,3 @@ class Monitor:
             self.load_inventory(count)
             count += 1
             time.sleep(self.delay)
-
