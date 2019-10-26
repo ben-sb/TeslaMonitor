@@ -6,7 +6,13 @@ if __name__ == '__main__':
     try:
         config = json.load(open('config.json'))
 
-        monitor = Monitor(model=config['model'], condition=config['condition'], delay_in_seconds=int(config['refresh_delay']))
+        monitor = Monitor(
+            model=config['model'],
+            condition=config['condition'],
+            colour=config['colour'],
+            delay_in_seconds=int(config['refresh_delay']),
+            webhooks=config['webhooks']
+        )
         monitor.run()
 
     except FileNotFoundError:

@@ -1,10 +1,11 @@
 
 class Car:
-    def __init__(self, trim, paint, interior, price):
+    def __init__(self, trim, paint, interior, price, vin):
         self.trim = trim
         self.paint = paint
         self.interior = interior
         self.price = price
+        self.vin = vin
 
     def __str__(self):
         return '{} {} with {} interior for £{}'.format(self.paint, self.trim, self.interior, self.price)
